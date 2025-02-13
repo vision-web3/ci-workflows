@@ -1,5 +1,5 @@
 # Ci-workflows
-Collection of CI actions used by Pantos. Collections are separated by target languages.
+Collection of CI actions used by Vision. Collections are separated by target languages.
 - Python
 
 Additional analysis:

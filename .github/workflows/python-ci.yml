@@ -45,7 +45,7 @@ jobs:
             submodules: recursive
             token: ${{ secrets.GH_TOKEN || github.token }}
 
-      - uses: pantos-io/ci-workflows/.github/actions/install-python-deps@v1
+      - uses: vision-web3-foundation/ci-workflows/.github/actions/install-python-deps@v1
 
       - name: StaticCodeAnalysis
         run: |
@@ -70,7 +70,7 @@ jobs:
         with:
             token: ${{ secrets.GH_TOKEN || github.token }}
 
-      - uses: pantos-io/ci-workflows/.github/actions/install-python-deps@v1
+      - uses: vision-web3-foundation/ci-workflows/.github/actions/install-python-deps@v1
 
       - name: Formatting
         id: formatter-check
@@ -96,7 +96,7 @@ jobs:
         with:
             token: ${{ secrets.GH_TOKEN || github.token }}
 
-      - uses: pantos-io/ci-workflows/.github/actions/install-python-deps@v1
+      - uses: vision-web3-foundation/ci-workflows/.github/actions/install-python-deps@v1
 
       - name: Lint
         run: make lint
@@ -120,7 +120,7 @@ jobs:
         with:
             token: ${{ secrets.GH_TOKEN || github.token }}
 
-      - uses: pantos-io/ci-workflows/.github/actions/install-python-deps@v1
+      - uses: vision-web3-foundation/ci-workflows/.github/actions/install-python-deps@v1
 
       - name: Sort
         run: make sort-check
@@ -145,7 +145,7 @@ jobs:
         with:
             token: ${{ secrets.GH_TOKEN || github.token }}
 
-      - uses: pantos-io/ci-workflows/.github/actions/install-python-deps@v1
+      - uses: vision-web3-foundation/ci-workflows/.github/actions/install-python-deps@v1
 
       - name: Bandit
         run: make bandit
@@ -186,7 +186,7 @@ jobs:
         with:
             token: ${{ secrets.GH_TOKEN || github.token }}
       
-      - uses: pantos-io/ci-workflows/.github/actions/install-python-deps@v1
+      - uses: vision-web3-foundation/ci-workflows/.github/actions/install-python-deps@v1
         with:
           python-version: ${{ matrix.python-version }}
           runner-os: ${{ matrix.os }}
